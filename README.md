@@ -10,9 +10,9 @@ Los Paths estarán compuesto por PathCubes. Un Chunk puede tener varios Path gen
 
 1. Se genera un Path hasta el Fork. El fork es un PathCube marcado como punto de bifurcación de los siguientes Paths. Este fork está asegurado de generarse más allá de la mitad del chunk.
 2. Se continua generando el primer Path hasta un Edge (Borde de un Chunk). Este Edge está determinado por lo siguiente:
-	2.1. No puede ser el mismo Edge del que partió el Path.
-	2.2. No puede ser un Edge que está cerrado entre otros Chunks.
-	2.3. No puede chocarse con otros Paths (Incluido él mismo).
+2.1. No puede ser el mismo Edge del que partió el Path.
+2.2. No puede ser un Edge que está cerrado entre otros Chunks.
+2.3. No puede chocarse con otros Paths (Incluido él mismo).
 3. Una vez generado este primer Path, en caso de que exista la probabilidad (dependiendo del número de Chunks generados) creará más Paths. Estos Paths partirán del Fork e intentarán llegar a otro Edge disponible. Si no son capaces, recorrerán el primer Path, cambiando su origen e intentando llegar a su dirección de salida.
 4. En caso de que un Path no pueda llegar a su dirección de salida, intentará recalcularse volviendo sobre sus pasos e impidiendo que recorra el mismo camino que no le sirvió para llegar a su destino anteriormente. En caso que no sea capaz se descartará.
 
@@ -24,7 +24,7 @@ Como añadido y forma de testear el MapCreator, se implementó una funcionalidad
 
 # Como usarlo
 
-La escena Map_Scene ya está configurada para su uso, siendo el MapCreator el elemento más importante y donde está la configuración para probar
+La escena Map_Scene ya está configurada para su uso, siendo el MapCreator el elemento más importante y donde está la configuración para probar.
 
 El sistema está montado de tal manera que funcione en EditorMode como en PlayMode, a excepción de la funcionalidad Go Step By Step automática, que solo funciona en PlayMode.
 
