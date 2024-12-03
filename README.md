@@ -1,7 +1,6 @@
 # Generación procedural de Terreno con Caminos en Chunks
 
-TODO: Portada
-<img src="">
+<img src="https://github.com/Carc0/procedural-terrain-chunks/blob/main/Portada.png">
 
 # Resumen
 
@@ -30,8 +29,7 @@ La escena Map_Scene ya está configurada para su uso, siendo el MapCreator el el
 
 El sistema está montado de tal manera que funcione en EditorMode como en PlayMode, a excepción de la funcionalidad Go Step By Step automática, que solo funciona en PlayMode.
 
-TODO: Configuración
-<img src="">
+<img src="https://github.com/Carc0/procedural-terrain-chunks/blob/main/Configuraci%C3%B3n.png">
 
 - Chunk Size: Tamaño del Chunk limitado en 5 hasta 50. Establecí la base en mínimo en 5 para que los Paths pudieran generarse en ese espacio tan pequeño. A su vez, límite en 50 el máximo debido a la carga y tiempo de espera que supondría hacer Chunks tan grandes.
 - Chunks Number: Número de Chunks que habrá en el mapa. Límitado en 1 (El inicial) hasta 50, debido a la misma razón de tiempos de espera.
@@ -39,15 +37,15 @@ TODO: Configuración
 - Proximity Path To Edge: Peso que tendrán los Paths en generarse cerca del centro o cerca de los Edge. Un valor de 0, hará que los Paths se generen más cerca del centro. Un valor de 1, hará que se generen más cerca de los Edge.
 - Irregularity Path: Peso que tendrán los Paths en generarse de manera irregular o de manera recta. Un valor de 0, hará que los Paths se generen más rectos. Un valor de 1, hará que los PAths se generen más irregulares.
 
-Seed: Número de la seed cargada. En caso de usar un número negativo (-1 default) hará que aleatoriamente se genere un seed. En caso que se quiera generar una seed específica tan solo poner un número positivo. En la Consola, el primer mensaje mostrará la seed generada.
-Sum New Paths Probability: Probabilidad que se irá sumando por cada Chunk generado para la generación de Paths adicionales.
+- Seed: Número de la seed cargada. En caso de usar un número negativo (-1 default) hará que aleatoriamente se genere un seed. En caso que se quiera generar una seed específica tan solo poner un número positivo. En la Consola, el primer mensaje mostrará la seed generada.
+- Sum New Paths Probability: Probabilidad que se irá sumando por cada Chunk generado para la generación de Paths adicionales.
 
-Go Step By Step: Para comprobar la generación del mapa paso a paso. En EditorMode, será necesario usar el botón Do Next Step cada vez que se quiera avanzar poco a poco en su generación. En GameMode se hará automáticamente.
-Go Step By Step Seconds: Si Go Step By Step es true y se está en GameMode, tiempo que tardará en hacer un Do Next Step hasta terminar el Path automáticamente.
+- Go Step By Step: Para comprobar la generación del mapa paso a paso. En EditorMode, será necesario usar el botón Do Next Step cada vez que se quiera avanzar poco a poco en su generación. En GameMode se hará automáticamente.
+- Go Step By Step Seconds: Si Go Step By Step es true y se está en GameMode, tiempo que tardará en hacer un Do Next Step hasta terminar el Path automáticamente.
 
-Create map: Genera el mapa. Dependiendo de Go Step By Step lo hará por completo o poco a poco.
-Do next step: Si Go Step By Step es true y se está en EditorMode, avanzará un paso en la generación del mapa.
-Delete map: Reinicia el mapa.
+- Create map: Genera el mapa. Dependiendo de Go Step By Step lo hará por completo o poco a poco.
+- Do next step: Si Go Step By Step es true y se está en EditorMode, avanzará un paso en la generación del mapa.
+- Delete map: Reinicia el mapa.
 
 # TODO
 
