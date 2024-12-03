@@ -20,8 +20,7 @@ El primer Chunk se genera siempre de la misma manera, partiendo de su centro y y
 
 Como añadido y forma de testear el MapCreator, se implementó una funcionalidad que permite ir paso a paso (Go Step By Step) e ir comprobando como se genera los Chunks y sus respectivos Paths. A continuación se explica como se usa.
 
-TODO: CreaciónMapa
-<img src="">
+<img src="https://github.com/Carc0/procedural-terrain-chunks/blob/main/Creaci%C3%B3nMapa.gif">
 
 # Como usarlo
 
